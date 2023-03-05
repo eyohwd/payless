@@ -5,9 +5,18 @@ const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 const app = express();
 app.use(cors());
-console.log(process.env.STRIPE_PRIVATE_KEY);
+// console.log(process.env.STRIPE_PRIVATE_KEY);
 
 app.use(express.json());
+
+const path = require("path")
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("build"))
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "build", "index.html"))
+  })
+}
 
 app.get("/", (req, res) => {
     res.send("Welcome to lekhoShop wesite.")
