@@ -56,6 +56,11 @@ const Contact = () => {
                 </span>
 
                 <span>
+                  <FaPhoneAlt/>
+                  <p>+234 904 835 2615</p>
+                </span>
+
+                <span>
                   <FaEnvelope/>
                   <p>ehiboy1@gmail.com</p>
                 </span>
