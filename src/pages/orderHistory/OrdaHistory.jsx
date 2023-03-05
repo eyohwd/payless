@@ -5,13 +5,13 @@ import Loader from "../../components/loader/Loader";
 import useFetchCollection from "../../customHooks/useFetchCollection";
 import { selectUserID } from "../../redux/slice/authSlice";
 import { selectOrderHistory, STORE_ORDERS } from "../../redux/slice/orderSlice";
-import styles from "./OrderHistory.module.scss";
+import styles from "./OrdaHistory.module.scss";
 
 
 
 
 
-const OrderHistory = () => {
+const OrdaHistory = () => {
   const {data, isLoading} = useFetchCollection("orders");
   const orders = useSelector(selectOrderHistory)
   const userID = useSelector(selectUserID)
@@ -79,4 +79,4 @@ const filteredOrders = orders.filter((order) => order.userID === userID)
   );
 }
 
-export default OrderHistory;
+export default OrdaHistory;
