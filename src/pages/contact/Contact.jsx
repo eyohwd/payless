@@ -14,7 +14,7 @@ const Contact = () => {
 
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_vykcwoi', form.current, 'BFU2lW4Q_LIcy5jYe')
       .then((result) => {
-        toast.success("Message sent successfully")
+        toast.success("Message sent successfully..")
           //console.log(result.text);
       }, (error) => {
         toast.error(error.text)
@@ -57,7 +57,7 @@ const Contact = () => {
 
                 <span>
                   <FaEnvelope/>
-                  <p>toyinomage04@gmail.com</p>
+                  <p>ehiboy1@gmail.com</p>
                 </span>
 
                 <span>
