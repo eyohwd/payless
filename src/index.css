@@ -3,7 +3,7 @@
 :root {
   --font-family: "Poppins", sans-serif;
   --dark-blue: #0a1930;
-  --light-blue: #1f93ff;
+  --light-blue: rgb(128, 0, 107);
 
   --color-white: #fff;
   --color-dark: #333;
@@ -16,7 +16,8 @@
 
   --color-primary: #007bff;
   --color-success: #28a745;
-  --color-danger: orangered;
+  --color-succ: #f1f10a;
+  --color-danger: rgb(200, 255, 0);
 }
 
 * {
@@ -299,7 +300,7 @@ p {
 
 .--btn-primary {
   color: #fff;
-  background: #007bff;
+  background: rgb(9, 207, 115);
 }
 .--btn-secondary {
   color: #fff;
@@ -308,7 +309,7 @@ p {
 }
 .--btn-danger {
   color: #fff;
-  background: orangered;
+  background: #07e98b;
 }
 
 .--btn-success {

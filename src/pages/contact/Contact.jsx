@@ -12,7 +12,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_vykcwoi', form.current, 'BFU2lW4Q_LIcy5jYe')
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_eu55vid', form.current, 'wclCBxCHsoFgtQdzH')
       .then((result) => {
         toast.success("Message sent successfully...")
           //console.log(result.text);
@@ -52,27 +52,27 @@ const Contact = () => {
               <div className={styles.icons}>
                 <span>
                   <FaPhoneAlt/>
-                  <p>+234 816 247 1330</p>
+                  <p>+234 704 123 4000</p>
                 </span>
 
                 <span>
                   <FaPhoneAlt/>
-                  <p>+234 904 835 2615</p>
+                  <p>+234 809 954 5499</p>
                 </span>
 
                 <span>
                   <FaEnvelope/>
-                  <p>ehiboy1@gmail.com</p>
+                  <p>paylesslpg@gmail.com</p>
                 </span>
 
                 <span>
                   <GoLocation/>
-                  <p>TradeFair, Lagos, Nigeria.</p>
+                  <p>Okota, Lagos, Nigeria.</p>
                 </span>
 
                 <span>
                   <FaTwitter/>
-                  <p>@ToyinOmage</p>
+                  <p>@paylesslpg</p>
                 </span>
               </div>
           </Card>

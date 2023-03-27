@@ -12,7 +12,7 @@ import { SET_ACTIVE_USER, REMOVE_ACTIVE_USER } from "../../redux/slice/authSlice
 import ShowOnLogin, { ShowOnLogout } from "../hiddenLink/hiddenLink";
 import AdminOnlyRoute, { AdminOnlyLink } from "../adminOnlyRoute/AdminOnlyRoute";
 import { CALCULATE_TOTAL_QUANTITY, selectCartTotalQuantity } from "../../redux/slice/cartSlice";
-
+import imgpay from "../../assets/payless2.jpg"
 
 
 
@@ -21,10 +21,14 @@ const logo = (
   <div className={styles.logo}>
   <Link to="/">
     <h2>
-      lekho<span>Shop</span>.
+   
+    <img src={imgpay} alt="" style={{width:"65px", height:"65px", borderRadius:"50%", marginTop:"15px"}}/>
+    
+     
     </h2>
+    
   </Link>
-
+  
 </div>
 )
 
@@ -124,7 +128,7 @@ const Header = () => {
     <header className={scrollPage ? `${styles.fixed}` : null}>
       <div className={styles.header}>
         {logo}
-
+        <h2 style={{color: "#f1f10a", marginLeft: "10px"}}>Pay<span style={{color: "orange"}}>Less</span></h2>      
         <nav className={showMenu ? `${styles["show-nav"]}` : `${styles["hide-nav"]}`}> 
           <div  className = { showMenu ? `${styles["nav-wrapper"] } ${styles["show-nav-wrapper"]}`
           : `${styles["nav-wrapper"]}`} onClick={hideMenu}></div>
@@ -134,6 +138,7 @@ const Header = () => {
               {logo}
               <FaTimes size={22} color="#fff" onClick={hideMenu}/>
             </li>
+            
             <li>
               <AdminOnlyLink>
                 <Link to="/admin/home">
@@ -159,7 +164,7 @@ const Header = () => {
                <NavLink to="/login"className={activeLink}>Login</NavLink>
                </ShowOnLogout>
                <ShowOnLogin>
-               <a href="#home" style={{color: "#ff7722"}}>
+               <a href="#home" style={{color: "#ff4500"}}>
                 <FaUserCircle size={16}/>
                 Hi, {displayName}
                </a>

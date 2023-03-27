@@ -1,40 +1,35 @@
-import IMG1 from "../../assets/images1ba.jpg";
-import IMG2 from "../../assets/images1ca.jpg";
-import IMG3 from "../../assets/images1da.jpg";
+
+import image3 from "../../assets/payless3.jpeg";
+import image4 from "../../assets/payless4.jpeg";
+import image5 from "../../assets/payless5.jpeg";
+import image6 from "../../assets/payless6.jpeg";
+import image7 from "../../assets/payless7.jpeg";
+
 export const sliderData = [
     {
-      image: "https://i.ibb.co/CBGRLhG/bg-4.jpg",
-      heading: "Shoes Villa",
+      image: image3,
+      heading: "Quality Cylinders",
       desc: "Up to 15% off on all onsale proucts.",
     },
     {
-      image: "https://i.ibb.co/cDLBk5h/bg-1.jpg",
-      heading: "Women Fashion",
+      image: image4,
+      heading: "Complete & Accurate refill",
       desc: "Up to 10% off on all onsale proucts.",
     },
     {
-      image: "https://i.ibb.co/HXjD3V0/bg-2.jpg",
-      heading: "Men Fashion",
+      image: image5,
+      heading: "Standard & Quality Gas Cooker",
       desc: "Up to 30% off on all onsale proucts.",
     },
     {
-      image: "https://i.ibb.co/H2FRmtV/bg-3.jpg",
-      heading: "Awesome Gadgets",
+      image: image6,
+      heading: "Afforda Camp Gas Cylinder",
       desc: "Up to 15% off on all onsale proucts.",
     },
     {
-      image: IMG1,
-      heading: "100% Humair Hair",
-      desc: "Up to 25% off on all onsale proucts.",
+      image: image7,
+      heading: "Cylinder & Table top Gas cooker",
+      desc: "Up to 15% off on all onsale proucts.",
     },
-    {
-      image: IMG2,
-      heading: "Natural Hair",
-      desc: "Up to 25% off on all onsale proucts.",
-    },
-    {
-      image: IMG3,
-      heading: "Curly Hair",
-      desc: "Up to 25% off on all onsale proucts.",
-    },
+    
   ];

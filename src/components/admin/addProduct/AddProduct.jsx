@@ -14,12 +14,14 @@ import { selectProducts } from '../../../redux/slice/productSlice';
 
 
 const categories = [
-  {id: 1, name: "Laptop"},
-  {id: 2, name: "Electronics"},
-  {id: 3, name: "Fashion"},
-  {id: 4, name:  "Phone"},
-  {id: 5, name:  "Hair"},
-  {id: 6, name:  "Accessories"},
+  {id: 1, name: "General products"},
+  {id: 2, name: "Gas cylinders"},
+  {id: 3, name: "Gas Cooker"},
+  {id: 4, name:  "Regulator"},
+  {id: 5, name:  "Hoes"},
+  {id: 6, name:  " Gas bunner"},
+  {id: 7, name:  " Gas Valve"},
+  {id: 8, name:  " Gas Accessories"},
   ];
 
 const initialState = {
